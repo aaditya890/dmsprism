@@ -2,20 +2,20 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from "./components/header/header.component";
 import { HeroComponent } from './components/hero/hero.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { OurServicesComponent } from './components/our-services/our-services.component';
+import { PortfolioComponent } from "./components/portfolio/portfolio.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HeaderComponent,HeroComponent,PortfolioComponent,OurServicesComponent,FooterComponent],
+  imports: [HeaderComponent, HeroComponent, OurServicesComponent, FooterComponent, PortfolioComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'dmsprism';
 
-   toggleTheme(): void {
+  toggleTheme(): void {
     document.documentElement.classList.toggle('dark');
   }
 }
