@@ -1,0 +1,363 @@
+/* Smooth transitions for theme toggle */
+.hero-section {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 3D perspective for cards */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes float-slow {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-15px) rotate(2deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+@keyframes float-slow-reverse {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(15px) rotate(-2deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+@keyframes pulse-slow {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes bounce-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes reveal {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* Scrolling animations */
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scrollHorizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Apply scrolling animations to content */
+.scrolling-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.scrolling-content {
+  animation: scrollUp 30s linear infinite;
+  position: relative;
+}
+
+.scrolling-content:hover {
+  animation-play-state: paused;
+}
+
+.scrolling-content-reverse {
+  animation: scrollDown 30s linear infinite;
+  position: relative;
+}
+
+.scrolling-content-reverse:hover {
+  animation-play-state: paused;
+}
+
+.scrolling-wrapper-horizontal {
+  position: relative;
+  overflow: hidden;
+}
+
+.scrolling-content-horizontal {
+  animation: scrollHorizontal 20s linear infinite;
+  width: 200%;
+  display: flex;
+}
+
+.scrolling-content-horizontal:hover {
+  animation-play-state: paused;
+}
+
+/* Make sure content is duplicated for seamless scrolling */
+.scrolling-content::after {
+  content: "";
+  display: block;
+  height: 100%;
+}
+
+.scrolling-content-reverse::after {
+  content: "";
+  display: block;
+  height: 100%;
+}
+
+.scrolling-content-horizontal > * {
+  animation: none !important;
+}
+
+/* Hide scrollbars */
+.scrolling-wrapper::-webkit-scrollbar,
+.scrolling-wrapper-horizontal::-webkit-scrollbar {
+  display: none;
+}
+
+.scrolling-wrapper,
+.scrolling-wrapper-horizontal {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Animation classes */
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+.animate-float-slow-reverse {
+  animation: float-slow-reverse 7s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-ping {
+  animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2s ease-in-out infinite;
+}
+
+.animate-reveal {
+  animation: reveal 0.8s ease-out forwards;
+}
+
+/* Animation delays */
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animation-delay-400 {
+  animation-delay: 0.4s;
+}
+
+.animation-delay-600 {
+  animation-delay: 0.6s;
+}
+
+.animation-delay-700 {
+  animation-delay: 0.7s;
+}
+
+/* Scrolling containers */
+.scroll-container,
+#videoScrollContainer,
+#postsScrollContainer,
+#storiesScrollContainer {
+  transition: transform 0.3s ease-out;
+}
+
+/* Glow effect for CTA button */
+.hover\:shadow-glow:hover {
+  box-shadow: 0 0 15px 5px rgba(59, 130, 246, 0.3);
+}
+
+/* Card styling */
+.card-container {
+  position: relative;
+  overflow: hidden;
+  background-color: #1e1e1e;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark .card-container {
+  background-color: #121212;
+}
+
+.card-container:hover {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Post and video items */
+.post-item,
+.video-item,
+.analytics-item,
+.story-item {
+  transition: transform 0.3s ease;
+}
+
+.post-item:hover,
+.video-item:hover,
+.analytics-item:hover,
+.story-item:hover {
+  transform: translateY(-2px);
+}
+
+/* Gradient backgrounds */
+.bg-gradient-to-br {
+  background-size: 200% 200%;
+  animation: gradientShift 10s ease infinite;
+}
+
+/* Hover effects */
+button svg {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+button:hover svg {
+  transform: scale(1.1);
+}
+
+/* Chart animations */
+svg path[stroke] {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: chartLine 2s ease-out forwards;
+}
+
+@keyframes chartLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
