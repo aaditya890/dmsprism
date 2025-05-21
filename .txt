@@ -106,3 +106,41 @@ section -><div class="relative z-10 p-8 md:p-12 flex flex-col md:flex-row items-
           </div>
         </div>
       </div>
+
+
+
+       <!-- Service Card 10: App Development -->
+      <div 
+        class="group bg-white dark:bg-secondary rounded-2xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-xl transform perspective-1000 hover:rotate-y-1 hover:-translate-y-2"
+        [class.hidden]="!shouldShowService('App Development')"
+      >
+        <div class="relative h-48 overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-teal-400 to-teal-600 dark:from-teal-600 dark:to-teal-800">
+            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,white_0%,transparent_50%)]"></div>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-3">App Development</h3>
+          <p class="text-tertiary/70 mb-4">
+            Native and cross-platform mobile application development that delivers seamless user experiences across all devices.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-2 py-1 bg-teal-100 dark:bg-teal-900/30 text-teal-600 dark:text-teal-400 rounded-full text-xs font-medium">iOS</span>
+            <span class="px-2 py-1 bg-teal-100 dark:bg-teal-900/30 text-teal-600 dark:text-teal-400 rounded-full text-xs font-medium">Android</span>
+            <span class="px-2 py-1 bg-teal-100 dark:bg-teal-900/30 text-teal-600 dark:text-teal-400 rounded-full text-xs font-medium">Cross-platform</span>
+          </div>
+          <a href="#contact" class="inline-flex items-center text-pr1 hover:underline">
+            Learn more
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
