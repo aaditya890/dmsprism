@@ -1,0 +1,51 @@
+:host {
+  display: block;
+}
+
+// Testimonial scrolling animations
+@keyframes testimonial-scroll-ltr {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes testimonial-scroll-rtl {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.testimonial-track-ltr {
+  animation: testimonial-scroll-rtl 50s linear infinite;
+  
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+.testimonial-track-rtl {
+  animation: testimonial-scroll-ltr 50s linear infinite;
+  
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+// Enhance testimonial cards on hover
+.testimonial-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+// Video modal animations
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

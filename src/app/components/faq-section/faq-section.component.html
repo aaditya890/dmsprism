@@ -1,0 +1,150 @@
+<section class="relative py-14 bg-[hsl(var(--color-primary))] text-[hsl(var(--color-tertiary))]">
+  <!-- Background elements -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute top-0 left-0 w-full h-full opacity-[0.03] dark:opacity-[0.05]">
+      <div class="h-full w-full bg-[linear-gradient(to_right,#8884_1px,transparent_1px),linear-gradient(to_bottom,#8884_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+    </div>
+    <div class="absolute top-1/4 right-1/4 w-[500px] h-[500px] rounded-full bg-pr1/5 dark:bg-pr1/10 blur-3xl"></div>
+    <div class="absolute bottom-1/3 left-1/3 w-[300px] h-[300px] rounded-full bg-pr1/5 dark:bg-pr1/10 blur-3xl"></div>
+  </div>
+
+  <div class="container mx-auto px-4 relative z-10">
+    <!-- Section Header -->
+    <div class="text-center mb-16" @fadeIn>
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Frequently asked questions</h2>
+      <p class="max-w-2xl mx-auto text-tertiary/80 text-lg">
+        If you have any questions that aren't listed below, feel free to 
+        <a href="#contact" class="text-pr1 hover:underline">schedule a demo</a> 
+        to speak with someone from our team.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <!-- FAQ Column -->
+      <div class="lg:col-span-2">
+        <div class="space-y-6">
+          <div *ngFor="let faq of faqs; let i = index" 
+            class="bg-white dark:bg-secondary rounded-xl overflow-hidden shadow-md transition-all duration-300 hover:shadow-lg"
+            @fadeIn
+            [style.animation-delay]="(i * 100) + 'ms'">
+            <button 
+              (click)="toggleFaq(faq.id)"
+              class="w-full flex items-center justify-between p-6 text-left focus:outline-none"
+            >
+              <h3 class="text-lg font-semibold pr-8">{{ faq.question }}</h3>
+              <div class="flex-shrink-0 w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white/70" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  [@rotateIcon]="isFaqOpen(faq.id) ? 'expanded' : 'collapsed'">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg>
+              </div>
+            </button>
+            <div [@expandCollapse]="isFaqOpen(faq.id) ? 'expanded' : 'collapsed'">
+              <div class="px-6 pb-6 text-tertiary/80">
+                {{ faq.answer }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- CTA and Testimonial Column -->
+      <div class="lg:col-span-1">
+        <div class="sticky top-24">
+          <!-- CTA Card -->
+          <div class="bg-white dark:bg-secondary rounded-xl overflow-hidden shadow-lg mb-8" @fadeIn>
+            <div class="p-8 text-center">
+              <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-pr1/10 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-pr1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                </svg>
+              </div>
+              
+              <h3 class="text-2xl font-bold mb-2">Get started with a free strategy call!</h3>
+              <p class="text-tertiary/70 mb-6">
+                Schedule a 30-minute call with our experts to discuss your needs and see how we can help.
+              </p>
+              
+              <a href="#contact" class="block w-full py-3 px-4 bg-pr1 text-white rounded-lg font-medium hover:bg-pr1/90 transition-colors">
+                Schedule Demo
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Testimonial Card -->
+          <div class="bg-white dark:bg-secondary rounded-xl overflow-hidden shadow-lg" @fadeIn>
+            <div class="p-8">
+              <h3 class="text-xl font-bold mb-4 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-pr1 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                </svg>
+                Client Testimonials
+              </h3>
+              
+              <div class="relative overflow-hidden">
+                <div class="relative">
+                  <div *ngFor="let testimonial of testimonials; let i = index" 
+                    class="transition-opacity duration-500 absolute inset-0"
+                    [class.opacity-100]="i === activeTestimonial"
+                    [class.opacity-0]="i !== activeTestimonial"
+                    [class.pointer-events-none]="i !== activeTestimonial">
+                    <div class="mb-4">
+                      <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 32 32">
+                        <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                      </svg>
+                    </div>
+                    
+                    <p class="text-tertiary/80 italic mb-6">
+                      "{{ testimonial.quote }}"
+                    </p>
+                    
+                    <div class="flex items-center">
+                      <img [src]="testimonial.avatar" [alt]="testimonial.name" class="w-12 h-12 rounded-full mr-4" />
+                      <div>
+                        <h4 class="font-semibold">{{ testimonial.name }}</h4>
+                        <p class="text-sm text-tertiary/70">{{ testimonial.position }}, {{ testimonial.company }}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Navigation Dots -->
+                <div class="flex justify-center mt-6 space-x-2">
+                  <button *ngFor="let testimonial of testimonials; let i = index" 
+                    (click)="setTestimonial(i)"
+                    class="w-2.5 h-2.5 rounded-full transition-colors"
+                    [class.bg-pr1]="i === activeTestimonial"
+                    [class.bg-gray-300]="i !== activeTestimonial"
+                    [class.dark:bg-gray-700]="i !== activeTestimonial"
+                    [attr.aria-label]="'View testimonial ' + (i + 1)">
+                  </button>
+                </div>
+                
+                <!-- Navigation Arrows -->
+                <button 
+                  (click)="prevTestimonial()" 
+                  class="absolute top-1/2 left-0 transform -translate-y-1/2 w-8 h-8 rounded-full bg-white dark:bg-gray-800 shadow-md flex items-center justify-center text-tertiary hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors focus:outline-none"
+                  aria-label="Previous testimonial">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white/70" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <button 
+                  (click)="nextTestimonial()" 
+                  class="absolute top-1/2 right-0 transform -translate-y-1/2 w-8 h-8 rounded-full bg-white dark:bg-gray-800 shadow-md flex items-center justify-center text-tertiary hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors focus:outline-none"
+                  aria-label="Next testimonial">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white/70" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

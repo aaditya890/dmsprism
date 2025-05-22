@@ -144,3 +144,571 @@ section -><div class="relative z-10 p-8 md:p-12 flex flex-col md:flex-row items-
           </a>
         </div>
       </div>
+
+
+
+----------------
+
+
+
+      <!-- Service Card 5: Link Building -->
+      <div
+        class="group bg-white dark:bg-secondary rounded-2xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-xl transform perspective-1000 hover:rotate-y-1 hover:-translate-y-2"
+        [class.hidden]="!shouldShowService('Link building')">
+        <div class="relative h-48 overflow-hidden">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-yellow-400 to-yellow-600 dark:from-yellow-600 dark:to-yellow-800">
+            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,white_0%,transparent_50%)]">
+            </div>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-3">Link Building</h3>
+          <p class="text-tertiary/70 mb-4">
+            Strategic acquisition of high-quality backlinks to boost your website's authority and improve search engine
+            rankings.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span
+              class="px-2 py-1 rounded-full text-xs font-medium bg-[hsl(40,90%,90%)] dark:bg-[hsl(40,69%,31%)] text-[hsl(40,80%,30%)] dark:text-[hsl(40,100%,65%)]">Authority</span>
+            <span
+              class="px-2 py-1 rounded-full text-xs font-medium bg-[hsl(40,90%,90%)] dark:bg-[hsl(40,69%,31%)] text-[hsl(40,80%,30%)] dark:text-[hsl(40,100%,65%)]">Quality</span>
+            <span
+              class="px-2 py-1 rounded-full text-xs font-medium bg-[hsl(40,90%,90%)] dark:bg-[hsl(40,69%,31%)] text-[hsl(40,80%,30%)] dark:text-[hsl(40,100%,65%)]">Relevance</span>
+
+          </div>
+          <a href="#contact" class="inline-flex items-center text-pr1 hover:underline">
+            Learn more
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Service Card 6: Guest Posting -->
+      <div
+        class="group bg-white dark:bg-secondary rounded-2xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-xl transform perspective-1000 hover:rotate-y-1 hover:-translate-y-2"
+        [class.hidden]="!shouldShowService('Guest posting')">
+        <div class="relative h-48 overflow-hidden">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-400 to-orange-600 dark:from-orange-600 dark:to-orange-800">
+            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,white_0%,transparent_50%)]">
+            </div>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-3">Guest Posting</h3>
+          <p class="text-tertiary/70 mb-4">
+            High-quality content creation and placement on relevant industry websites to build authority, increase
+            visibility, and drive referral traffic.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span
+              class="px-2 py-1 rounded-full text-xs font-medium bg-[hsl(20,100%,90%)] dark:bg-[hsl(20,68%,29%)] text-[hsl(20,90%,30%)] dark:text-[hsl(20,100%,70%)]">Content</span>
+            <span
+              class="px-2 py-1 rounded-full text-xs font-medium bg-[hsl(20,100%,90%)] dark:bg-[hsl(20,68%,29%)] text-[hsl(20,90%,30%)] dark:text-[hsl(20,100%,70%)]">Outreach</span>
+            <span
+              class="px-2 py-1 rounded-full text-xs font-medium bg-[hsl(20,100%,90%)] dark:bg-[hsl(20,68%,29%)] text-[hsl(20,90%,30%)] dark:text-[hsl(20,100%,70%)]">Placement</span>
+          </div>
+          <a href="#contact" class="inline-flex items-center text-pr1 hover:underline">
+            Learn more
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Service Card 7: Guest Posting Outreach -->
+      <div
+        class="group bg-white dark:bg-secondary rounded-2xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-xl transform perspective-1000 hover:rotate-y-1 hover:-translate-y-2"
+        [class.hidden]="!shouldShowService('Guest posting outreach')">
+        <div class="relative h-48 overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-pink-400 to-pink-600 dark:from-pink-600 dark:to-pink-800">
+            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,white_0%,transparent_50%)]">
+            </div>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-3">Guest Posting Outreach</h3>
+          <p class="text-tertiary/70 mb-4">
+            Strategic outreach to relevant websites and blogs to secure guest posting opportunities that align with your
+            brand and industry.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span
+              class="px-2 py-1 bg-pink-100 dark:bg-pink-900/30 text-pink-600 dark:text-pink-400 rounded-full text-xs font-medium">Research</span>
+            <span
+              class="px-2 py-1 bg-pink-100 dark:bg-pink-900/30 text-pink-600 dark:text-pink-400 rounded-full text-xs font-medium">Outreach</span>
+            <span
+              class="px-2 py-1 bg-pink-100 dark:bg-pink-900/30 text-pink-600 dark:text-pink-400 rounded-full text-xs font-medium">Negotiation</span>
+          </div>
+          <a href="#contact" class="inline-flex items-center text-pr1 hover:underline">
+            Learn more
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Service Card 8: Email Marketing -->
+      <div
+        class="group bg-white dark:bg-secondary rounded-2xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-xl transform perspective-1000 hover:rotate-y-1 hover:-translate-y-2"
+        [class.hidden]="!shouldShowService('Email marketing')">
+        <div class="relative h-48 overflow-hidden">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-indigo-400 to-indigo-600 dark:from-indigo-600 dark:to-indigo-800">
+            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,white_0%,transparent_50%)]">
+            </div>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-3">Email Marketing</h3>
+          <p class="text-tertiary/70 mb-4">
+            Strategic email campaigns to nurture leads, engage customers, and drive conversions with personalized
+            content and automation.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span
+              class="px-2 py-1 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 rounded-full text-xs font-medium">Campaigns</span>
+            <span
+              class="px-2 py-1 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 rounded-full text-xs font-medium">Automation</span>
+            <span
+              class="px-2 py-1 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 rounded-full text-xs font-medium">Analytics</span>
+          </div>
+          <a href="#contact" class="inline-flex items-center text-pr1 hover:underline">
+            Learn more
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Service Card 9: Website Development -->
+      <div
+        class="group bg-white dark:bg-secondary rounded-2xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-xl transform perspective-1000 hover:rotate-y-1 hover:-translate-y-2"
+        [class.hidden]="!shouldShowService('Website development')">
+        <div class="relative h-48 overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-cyan-400 to-cyan-600 dark:from-cyan-600 dark:to-cyan-800">
+            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,white_0%,transparent_50%)]">
+            </div>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-3">Website & App Development</h3>
+          <p class="text-tertiary/70 mb-4">
+            Custom website design and development that combines stunning visuals with seamless functionality to create
+            an exceptional user experience.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span
+              class="px-2 py-1 bg-cyan-100 dark:bg-cyan-900/30 text-cyan-600 dark:text-cyan-400 rounded-full text-xs font-medium">UI/UX</span>
+            <span
+              class="px-2 py-1 bg-cyan-100 dark:bg-cyan-900/30 text-cyan-600 dark:text-cyan-400 rounded-full text-xs font-medium">Frontend</span>
+            <span
+              class="px-2 py-1 bg-cyan-100 dark:bg-cyan-900/30 text-cyan-600 dark:text-cyan-400 rounded-full text-xs font-medium">Backend</span>
+          </div>
+          <a href="#contact" class="inline-flex items-center text-pr1 hover:underline">
+            Learn more
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+
+
+
+      -----------------
+
+
+    
+
+      <!-- Service Card 3: Unlimited Video on Demand -->
+      <div
+        class="group bg-white dark:bg-secondary rounded-2xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-xl transform perspective-1000 hover:rotate-y-1 hover:-translate-y-2"
+        [class.hidden]="!shouldShowService('Unlimited video on demand')">
+        <div class="relative h-48 overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-red-400 to-red-600 dark:from-red-600 dark:to-red-800">
+            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,white_0%,transparent_50%)]">
+            </div>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-3">Unlimited Video on Demand</h3>
+          <p class="text-tertiary/70 mb-4">
+            Professional video production services with unlimited revisions, from social media shorts to promotional
+            videos and animations.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span
+              class="px-2 py-1 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-full text-xs font-medium">Social</span>
+            <span
+              class="px-2 py-1 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-full text-xs font-medium">Ads</span>
+            <span
+              class="px-2 py-1 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-full text-xs font-medium">Animation</span>
+          </div>
+          <a href="#contact" class="inline-flex items-center text-pr1 hover:underline">
+            Learn more
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Service Card 4: SEO -->
+      <div
+        class="group bg-white dark:bg-secondary rounded-2xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-xl transform perspective-1000 hover:rotate-y-1 hover:-translate-y-2"
+        [class.hidden]="!shouldShowService('SEO')">
+        <div class="relative h-48 overflow-hidden">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-green-400 to-green-600 dark:from-green-600 dark:to-green-800">
+            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,white_0%,transparent_50%)]">
+            </div>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-3">Search Engine Optimization</h3>
+          <p class="text-tertiary/70 mb-4">
+            Comprehensive SEO strategies to improve your website's visibility in search engines and drive organic
+            traffic to your business.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span
+              class="px-2 py-1 rounded-full text-xs font-medium bg-[hsl(142,70%,90%)] dark:bg-[hsl(142,66%,35%)] text-[hsl(142,50%,30%)] dark:text-[hsl(142,90%,65%)]">On-page</span>
+            <span
+              class="px-2 py-1 rounded-full text-xs font-medium bg-[hsl(142,70%,90%)] dark:bg-[hsl(142,66%,35%)] text-[hsl(142,50%,30%)] dark:text-[hsl(142,90%,65%)]">Off-page</span>
+            <span
+              class="px-2 py-1 rounded-full text-xs font-medium bg-[hsl(142,70%,90%)] dark:bg-[hsl(142,66%,35%)] text-[hsl(142,50%,30%)] dark:text-[hsl(142,90%,65%)]">Technical</span>
+
+          </div>
+          <a href="#contact" class="inline-flex items-center text-pr1 hover:underline">
+            Learn more
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Service Card 5: Link Building -->
+      <div
+        class="group bg-white dark:bg-secondary rounded-2xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-xl transform perspective-1000 hover:rotate-y-1 hover:-translate-y-2"
+        [class.hidden]="!shouldShowService('Link building')">
+        <div class="relative h-48 overflow-hidden">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-yellow-400 to-yellow-600 dark:from-yellow-600 dark:to-yellow-800">
+            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,white_0%,transparent_50%)]">
+            </div>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-3">Link Building</h3>
+          <p class="text-tertiary/70 mb-4">
+            Strategic acquisition of high-quality backlinks to boost your website's authority and improve search engine
+            rankings.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span
+              class="px-2 py-1 rounded-full text-xs font-medium bg-[hsl(40,90%,90%)] dark:bg-[hsl(40,69%,31%)] text-[hsl(40,80%,30%)] dark:text-[hsl(40,100%,65%)]">Authority</span>
+            <span
+              class="px-2 py-1 rounded-full text-xs font-medium bg-[hsl(40,90%,90%)] dark:bg-[hsl(40,69%,31%)] text-[hsl(40,80%,30%)] dark:text-[hsl(40,100%,65%)]">Quality</span>
+            <span
+              class="px-2 py-1 rounded-full text-xs font-medium bg-[hsl(40,90%,90%)] dark:bg-[hsl(40,69%,31%)] text-[hsl(40,80%,30%)] dark:text-[hsl(40,100%,65%)]">Relevance</span>
+
+          </div>
+          <a href="#contact" class="inline-flex items-center text-pr1 hover:underline">
+            Learn more
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Service Card 6: Guest Posting -->
+      <div
+        class="group bg-white dark:bg-secondary rounded-2xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-xl transform perspective-1000 hover:rotate-y-1 hover:-translate-y-2"
+        [class.hidden]="!shouldShowService('Guest posting')">
+        <div class="relative h-48 overflow-hidden">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-400 to-orange-600 dark:from-orange-600 dark:to-orange-800">
+            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,white_0%,transparent_50%)]">
+            </div>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-3">Guest Posting</h3>
+          <p class="text-tertiary/70 mb-4">
+            High-quality content creation and placement on relevant industry websites to build authority, increase
+            visibility, and drive referral traffic.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span
+              class="px-2 py-1 rounded-full text-xs font-medium bg-[hsl(20,100%,90%)] dark:bg-[hsl(20,68%,29%)] text-[hsl(20,90%,30%)] dark:text-[hsl(20,100%,70%)]">Content</span>
+            <span
+              class="px-2 py-1 rounded-full text-xs font-medium bg-[hsl(20,100%,90%)] dark:bg-[hsl(20,68%,29%)] text-[hsl(20,90%,30%)] dark:text-[hsl(20,100%,70%)]">Outreach</span>
+            <span
+              class="px-2 py-1 rounded-full text-xs font-medium bg-[hsl(20,100%,90%)] dark:bg-[hsl(20,68%,29%)] text-[hsl(20,90%,30%)] dark:text-[hsl(20,100%,70%)]">Placement</span>
+          </div>
+          <a href="#contact" class="inline-flex items-center text-pr1 hover:underline">
+            Learn more
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Service Card 7: Guest Posting Outreach -->
+      <div
+        class="group bg-white dark:bg-secondary rounded-2xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-xl transform perspective-1000 hover:rotate-y-1 hover:-translate-y-2"
+        [class.hidden]="!shouldShowService('Guest posting outreach')">
+        <div class="relative h-48 overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-pink-400 to-pink-600 dark:from-pink-600 dark:to-pink-800">
+            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,white_0%,transparent_50%)]">
+            </div>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-3">Guest Posting Outreach</h3>
+          <p class="text-tertiary/70 mb-4">
+            Strategic outreach to relevant websites and blogs to secure guest posting opportunities that align with your
+            brand and industry.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span
+              class="px-2 py-1 bg-pink-100 dark:bg-pink-900/30 text-pink-600 dark:text-pink-400 rounded-full text-xs font-medium">Research</span>
+            <span
+              class="px-2 py-1 bg-pink-100 dark:bg-pink-900/30 text-pink-600 dark:text-pink-400 rounded-full text-xs font-medium">Outreach</span>
+            <span
+              class="px-2 py-1 bg-pink-100 dark:bg-pink-900/30 text-pink-600 dark:text-pink-400 rounded-full text-xs font-medium">Negotiation</span>
+          </div>
+          <a href="#contact" class="inline-flex items-center text-pr1 hover:underline">
+            Learn more
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Service Card 8: Email Marketing -->
+      <div
+        class="group bg-white dark:bg-secondary rounded-2xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-xl transform perspective-1000 hover:rotate-y-1 hover:-translate-y-2"
+        [class.hidden]="!shouldShowService('Email marketing')">
+        <div class="relative h-48 overflow-hidden">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-indigo-400 to-indigo-600 dark:from-indigo-600 dark:to-indigo-800">
+            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,white_0%,transparent_50%)]">
+            </div>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-3">Email Marketing</h3>
+          <p class="text-tertiary/70 mb-4">
+            Strategic email campaigns to nurture leads, engage customers, and drive conversions with personalized
+            content and automation.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span
+              class="px-2 py-1 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 rounded-full text-xs font-medium">Campaigns</span>
+            <span
+              class="px-2 py-1 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 rounded-full text-xs font-medium">Automation</span>
+            <span
+              class="px-2 py-1 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 rounded-full text-xs font-medium">Analytics</span>
+          </div>
+          <a href="#contact" class="inline-flex items-center text-pr1 hover:underline">
+            Learn more
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Service Card 9: Website Development -->
+      <div
+        class="group bg-white dark:bg-secondary rounded-2xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-xl transform perspective-1000 hover:rotate-y-1 hover:-translate-y-2"
+        [class.hidden]="!shouldShowService('Website development')">
+        <div class="relative h-48 overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-cyan-400 to-cyan-600 dark:from-cyan-600 dark:to-cyan-800">
+            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,white_0%,transparent_50%)]">
+            </div>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-3">Website & App Development</h3>
+          <p class="text-tertiary/70 mb-4">
+            Custom website design and development that combines stunning visuals with seamless functionality to create
+            an exceptional user experience.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span
+              class="px-2 py-1 bg-cyan-100 dark:bg-cyan-900/30 text-cyan-600 dark:text-cyan-400 rounded-full text-xs font-medium">UI/UX</span>
+            <span
+              class="px-2 py-1 bg-cyan-100 dark:bg-cyan-900/30 text-cyan-600 dark:text-cyan-400 rounded-full text-xs font-medium">Frontend</span>
+            <span
+              class="px-2 py-1 bg-cyan-100 dark:bg-cyan-900/30 text-cyan-600 dark:text-cyan-400 rounded-full text-xs font-medium">Backend</span>
+          </div>
+          <a href="#contact" class="inline-flex items-center text-pr1 hover:underline">
+            Learn more
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+
+
+
+//// ---cta
+ <!-- CTA Section -->
+    <div class="bg-white dark:bg-secondary rounded-2xl overflow-hidden shadow-xl">
+      <div class="p-8 md:p-12 text-center">
+        <h3 class="text-2xl md:text-3xl font-bold mb-4">Ready to transform your digital presence?</h3>
+        <p class="max-w-2xl mx-auto text-tertiary/80 mb-8">
+          Let's create something amazing together. Our team of experts is ready to help you achieve your business goals.
+        </p>
+        <a href="#contact"
+          class="inline-flex items-center px-8 py-3 bg-pr1 text-white rounded-md hover:bg-pr1/90 transition-colors">
+          Get Started
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+
+
+    pages -> 
+    - >  
+    12 . email-marketing-lead-enquiry-form/

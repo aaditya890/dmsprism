@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })
@@ -11,7 +12,7 @@ export class PortfolioComponent {
    portfolioItems = [
     { id: 1, title: "Brand Identity Redesign", image: "https://dummyimage.com/820x320/8ae6eb/06060d", category: "Branding" },
     { id: 2, title: "Social Media Campaign", image: "https://dummyimage.com/350x270/85acd9/06060d", category: "Marketing" },
-    { id: 3, title: "E-Commerce Website", image: "https://dummyimage.com/350x270/85acd9/06060d", category: "Web Design" },
+    { id: 3, title: "E-Commerce Website", image: "https://dummyimage.com/480x975/000/fff", category: "Web Design" },
     { id: 4, title: "Product Launch Strategy", image: "https://dummyimage.com/350x270/85acd9/06060d", category: "Marketing" },
     { id: 5, title: "Content Marketing Plan", image: "https://dummyimage.com/350x270/85acd9/06060d", category: "Strategy" },
     { id: 6, title: "Brand Video Production", image: "https://dummyimage.com/820x320/8ae6eb/06060d", category: "Video" },
